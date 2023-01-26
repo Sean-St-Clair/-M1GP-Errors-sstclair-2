@@ -6,7 +6,7 @@
 
 class SPIE_Game {
 private:
-    vector winning_numbers;
+    std::vector<int> winning_numbers;
     const int MAX_NUMBERS = 12;
 public:
     /*
