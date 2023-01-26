@@ -65,7 +65,7 @@ public:
      * Modifies: outs
      * Effects: Prints the winning numbers to outs
      */
-    void print_winning_numbers(ostream &outs) const;
+    void print_winning_numbers(std::ostream &outs) const;
 
     /*
      * Roll dice

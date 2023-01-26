@@ -30,13 +30,14 @@ in the table below.
 
 Every time you fix a bug, log it in the README file here:
 
-| Type of error (compiler, runtime, logic) | File | Description | Fix                                                                 |
-|------------------------------------------| ---- | ----------- |---------------------------------------------------------------------|
+| Type of error (compiler, runtime, logic) | File           | Description | Fix                                                                 |
+|------------------------------------------|----------------| ----------- |---------------------------------------------------------------------|
 | Example: Compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments" | Added the project name to line 2                                    |
 | Compiler                                 | CMakeLists.txt | "CMake Error at CMakeLists.txt:6 (add_executable): No SOURCES given to target: Errors" | Added cpp files to add_executables                                  |
-| Runtime                                  | CMakeLists.txt | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:9:5: error: 'vector' does not name a type" | added a type to the vector and added std:: so vector could be used. |        |
-| Runtime                                  | CMakeLists.txt | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:36:35: error: 'ostream' has not been declared" | Added std:: in front of ostream so that it can be used properly     |
-| Runtime                                  | CMakeLists.txt | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:36:50: error: 'istream' has not been declared" | Added std:: in front of istream so that it can be used properly     |
+| Runtime                                  | spie.h         | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:9:5: error: 'vector' does not name a type" | added a type to the vector and added std:: so vector could be used. |        |
+| Runtime                                  | spie.h         | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:36:35: error: 'ostream' has not been declared" | Added std:: in front of ostream so that it can be used properly     |
+| Runtime                                  | spie.h         | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:36:50: error: 'istream' has not been declared" | Added std:: in front of istream so that it can be used properly     |
+| Runtime                                  | spie.h         | "C:/Users/seans/CLionProjects/-M1GP-Errors-sstclair-2/spie.h:68:32: error: 'ostream' has not been declared" | Added std:: in front of ostream in another location                 |
 | Example: compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments" | Added the project name to line 2                                    |
 | Example: compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments" | Added the project name to line 2                                    |
 | Example: compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments" | Added the project name to line 2                                    |
