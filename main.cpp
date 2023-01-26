@@ -1,4 +1,5 @@
-#include "spie.cpp"
+#include "spie.h"
+
 using namespace std;
 
 int main() {
@@ -12,12 +13,15 @@ int main() {
     while (choice != 'e') {
         choice = game.get_player_choice(cout, cin);
 
-        switch(choice)
-            case 's': game.scramble(cout);
+        switch (choice) {
+            case 's':
+                game.scramble(cout);
                 break;
-            case 'i': game.print_rules(cout);
+            case 'i':
+                game.print_rules(cout);
                 break;
-            case 'p': cout << "Your score is " << score << endl;
+            case 'p':
+                cout << "Your score is " << score << endl;
                 game.print_winning_numbers(cout);
                 int dice_roll = game.roll_dice();
                 cout << "Your dice roll is: " << dice_roll << endl;
@@ -38,13 +42,14 @@ int main() {
                 }
                 cout << "Your new score is " << score << endl;
         }
-    }
 
-    if (score == 0) {
-        cout << "You lost the game!" << endl;
-    else {
-        cout << "Play again soon!" << endl;
-    }
 
-    return 0
+        if (score == 0) {
+            cout << "You lost the game!" << endl;
+        } else {
+            cout << "Play again soon!" << endl;
+        }
+
+        return 0;
+    }
 }

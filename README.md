@@ -30,19 +30,23 @@ in the table below.
 
 Every time you fix a bug, log it in the README file here:
 
-| Type of error (compiler, runtime, logic) | File           | Description                                                                                 | Fix                                                   |
-|------------------------------------------|----------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| Example: Compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments"                                 | Added the project name to line 2                      |
-| Compiler                                 | CMakeLists.txt | "CMake Error at CMakeLists.txt:6 (add_executable): No SOURCES given to target: Errors"      | Added cpp files to add_executables                    |
-| Runtime                                  | spie.h         | "error: 'vector' does not name a type"                                                      | added a type to the vector and added std:: so vector could be used. |
-| Runtime                                  | spie.h         | "error: 'ostream' has not been declared"                                                    | Added std:: in front of ostream so that it can be used properly |
-| Runtime                                  | spie.h         | "error: 'istream' has not been declared"                                                    | Added std:: in front of istream so that it can be used properly |
-| Runtime                                  | spie.h         | "error: 'ostream' has not been declared"                                                    | Added std:: in front of ostream in another location   |
-| Runtime                                  | spie.cpp       | "error: expected unqualified-id before ')' token"                                           | Added SPIE_Game:: before constructor so it would be recognized |
-| Runtime                                  | spie.cpp       | "warning: no return statement in function returning non-void \[-Wreturn-type]"              | Added a proper return statement to this char method   |
-| Runtime                                  | main.cpp       | "warning: empty parentheses were disambiguated as a function declaration \[-Wvexing-parse]" | Changed line to properly call constructor and create a new instance of SPIE |
-| Runtime                                  | main.cpp       | "error: statement cannot resolve address of overloaded function"                                 | Added necessary cout argument when calling this method|
-| Example: compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments"                                 | Added the project name to line 2                      |
+| Type of error (compiler, runtime, logic) | File           | Description                                                                                 | Fix                                                                          |
+|------------------------------------------|----------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Example: Compiler                        | CMakeLists.txt | "project PROJECT called with incorrect number of arguments"                                 | Added the project name to line 2                                             |
+| Compiler                                 | CMakeLists.txt | "CMake Error at CMakeLists.txt:6 (add_executable): No SOURCES given to target: Errors"      | Added cpp files to add_executables                                           |
+| Runtime                                  | spie.h         | "error: 'vector' does not name a type"                                                      | added a type to the vector and added std:: so vector could be used.          |
+| Runtime                                  | spie.h         | "error: 'ostream' has not been declared"                                                    | Added std:: in front of ostream so that it can be used properly              |
+| Runtime                                  | spie.h         | "error: 'istream' has not been declared"                                                    | Added std:: in front of istream so that it can be used properly              |
+| Runtime                                  | spie.h         | "error: 'ostream' has not been declared"                                                    | Added std:: in front of ostream in another location                          |
+| Runtime                                  | spie.cpp       | "error: expected unqualified-id before ')' token"                                           | Added SPIE_Game:: before constructor so it would be recognized               |
+| Runtime                                  | spie.cpp       | "warning: no return statement in function returning non-void \[-Wreturn-type]"              | Added a proper return statement to this char method                          |
+| Runtime                                  | main.cpp       | "warning: empty parentheses were disambiguated as a function declaration \[-Wvexing-parse]" | Changed line to properly call constructor and create a new instance of SPIE  |
+| Runtime                                  | main.cpp       | "error: statement cannot resolve address of overloaded function"                                 | Added necessary cout argument when calling this method                       |
+| Runtime                                  | main.cpp       | "error: case label ''i'' not within a switch statement"                                 | Adjusted curly braces so that cases would be properly included within switch |
+| Runtime                                  | main.cpp       | "error: case label ''p'' not within a switch statement"                                 | The adjusted curly braces fixed this error as well                           |
+| Runtime                                  | main.cpp       | "error: expected unqualified-id before 'if'"                                 | The adjusted curly braces fixed this error as well                           |
+| Runtime                                  | main.cpp       | "error: expected ';' before '}' token"                                 | Added semicolon (classic)                                                    |
+| Runtime                                  | main.cpp       | "multiple definition of `SPIE_Game::SPIE_Game()';"                                 | Changed the include line to use "spie.h" rather than spie.cpp                |
 
 ### Grading Rubric
 
