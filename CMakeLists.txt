@@ -3,4 +3,4 @@ project(Errors)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Errors)
+add_executable(Errors main.cpp spie.cpp)
