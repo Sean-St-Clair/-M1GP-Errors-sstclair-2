@@ -54,7 +54,7 @@ Every time you fix a bug, log it in the README file here:
 Note: After fixing the CMAKE file, my program was able to compile and be run (the button was no longer greyed out), so I
 classified the rest of my errors as "runtime" errors (besides errors that were strictly logical). Perhaps my adding of
 both .cpp files to the CMake at once could have been stretched out into 2 compiler errors, but other than that, I am
-hesitant to classify my other errors as being compiler with my limited understanding!
+hesitant to classify my other errors as being compiler, with my limited understanding.
 
 ### Grading Rubric
 
