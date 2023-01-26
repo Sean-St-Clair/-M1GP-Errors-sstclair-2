@@ -43,7 +43,6 @@ int main() {
                 cout << "Your new score is " << score << endl;
         }
 
-
         if (score == 0) {
             cout << "You lost the game!" << endl;
         } else {

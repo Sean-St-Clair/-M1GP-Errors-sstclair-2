@@ -23,6 +23,7 @@ bool SPIE_Game::add_winning_number() {
             i = -1;
         }
     }
+    winning_numbers.push_back(new_number);
     return true;
 }
 
@@ -74,7 +75,7 @@ void SPIE_Game::print_winning_numbers(ostream &outs) const {
 }
 
 int SPIE_Game::roll_dice() {
-    return (rand() % 6) + (rand() % 6);
+    return (rand() % 6) + (rand() % 6) + 2;
 }
 
 void SPIE_Game::scramble(ostream &outs) {

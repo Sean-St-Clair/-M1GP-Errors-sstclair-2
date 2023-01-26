@@ -48,6 +48,8 @@ Every time you fix a bug, log it in the README file here:
 | Runtime                                  | main.cpp       | "error: expected ';' before '}' token"                                                      | Added semicolon (classic)                                                    |
 | Runtime                                  | main.cpp       | "multiple definition of `SPIE_Game::SPIE_Game()';"                                          | Changed the include line to use "spie.h" rather than spie.cpp                |
 | Logic                                    | spie.cpp       | All input is currently being rejected as invalid.                                           | Used proper && syntax in the 'if' statement to test the multiple options     |
+| Logic                                    | spie.cpp       | Dice rolls are each 0-5 when they should be 1-6                                             | Added + 1 to rand calls for dice rolls (+2 for both)                         |
+| Logic                                    | spie.cpp       | Winning numbers are not being properly added                                                | Added a push_back call to actually add the number to the vector              |
 
 ### Grading Rubric
 
