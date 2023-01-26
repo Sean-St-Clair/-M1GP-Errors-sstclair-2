@@ -49,7 +49,7 @@ int main() {
         } else {
             cout << "Play again soon!" << endl;
         }
-
-        return 0;
     }
+
+    return 0;
 }

@@ -41,12 +41,13 @@ Every time you fix a bug, log it in the README file here:
 | Runtime                                  | spie.cpp       | "error: expected unqualified-id before ')' token"                                           | Added SPIE_Game:: before constructor so it would be recognized               |
 | Runtime                                  | spie.cpp       | "warning: no return statement in function returning non-void \[-Wreturn-type]"              | Added a proper return statement to this char method                          |
 | Runtime                                  | main.cpp       | "warning: empty parentheses were disambiguated as a function declaration \[-Wvexing-parse]" | Changed line to properly call constructor and create a new instance of SPIE  |
-| Runtime                                  | main.cpp       | "error: statement cannot resolve address of overloaded function"                                 | Added necessary cout argument when calling this method                       |
-| Runtime                                  | main.cpp       | "error: case label ''i'' not within a switch statement"                                 | Adjusted curly braces so that cases would be properly included within switch |
-| Runtime                                  | main.cpp       | "error: case label ''p'' not within a switch statement"                                 | The adjusted curly braces fixed this error as well                           |
-| Runtime                                  | main.cpp       | "error: expected unqualified-id before 'if'"                                 | The adjusted curly braces fixed this error as well                           |
-| Runtime                                  | main.cpp       | "error: expected ';' before '}' token"                                 | Added semicolon (classic)                                                    |
-| Runtime                                  | main.cpp       | "multiple definition of `SPIE_Game::SPIE_Game()';"                                 | Changed the include line to use "spie.h" rather than spie.cpp                |
+| Runtime                                  | main.cpp       | "error: statement cannot resolve address of overloaded function"                            | Added necessary cout argument when calling this method                       |
+| Runtime                                  | main.cpp       | "error: case label ''i'' not within a switch statement"                                     | Adjusted curly braces so that cases would be properly included within switch |
+| Runtime                                  | main.cpp       | "error: case label ''p'' not within a switch statement"                                     | The adjusted curly braces fixed this error as well                           |
+| Runtime                                  | main.cpp       | "error: expected unqualified-id before 'if'"                                                | The adjusted curly braces fixed this error as well                           |
+| Runtime                                  | main.cpp       | "error: expected ';' before '}' token"                                                      | Added semicolon (classic)                                                    |
+| Runtime                                  | main.cpp       | "multiple definition of `SPIE_Game::SPIE_Game()';"                                          | Changed the include line to use "spie.h" rather than spie.cpp                |
+| Logic                                    | spie.cpp       | All input is currently being rejected as invalid.                                           | Used proper && syntax in the 'if' statement to test the multiple options     |
 
 ### Grading Rubric
 
