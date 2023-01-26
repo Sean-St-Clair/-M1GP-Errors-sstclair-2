@@ -1,5 +1,6 @@
 #include "spie.h"
 #include <time.h>
+
 using namespace std;
 
 SPIE_Game::SPIE_Game() {
@@ -34,6 +35,7 @@ char SPIE_Game::get_player_choice(ostream &outs, istream &ins) {
         print_options(outs);
         ins >> choice;
     }
+    return choice;
 }
 
 bool SPIE_Game::matches_winning_number(int roll) const {
@@ -54,7 +56,9 @@ void SPIE_Game::print_rules(ostream &outs) {
     outs << "If you roll the dice and match a winning number, you will get five points." << endl;
     outs << "If you roll the dice and do not match the winning numbers, you will lose one point." << endl;
     outs << "If you roll a 12 or a 2, a winning number will be added." << endl;
-    outs << "If you scramble, you will roll the dice five times. If any of your dice rolls match a winning number, that number will be replaced in the winning numbers list" << endl;
+    outs
+            << "If you scramble, you will roll the dice five times. If any of your dice rolls match a winning number, that number will be replaced in the winning numbers list"
+            << endl;
     outs << "If you run out of points, you lose." << endl;
 }
 
