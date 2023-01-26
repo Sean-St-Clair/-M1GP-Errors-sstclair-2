@@ -33,7 +33,7 @@ public:
      * Modifies: outs and ins
      * Effects: Prints the options to outs and gets user input. Checks for validity.
      */
-    static char get_player_choice(ostream &outs, istream &ins);
+    static char get_player_choice(std::ostream &outs, std::istream &ins);
 
     /*
      * Matches winning number
